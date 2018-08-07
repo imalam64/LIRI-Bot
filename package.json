@@ -1,19 +1,19 @@
 {
-  "name": "-y",
+  "name": "clear",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "keys.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imalam64/LIRI-Bot.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^6.0.0",
-    "node-spotify-api": "^1.0.7",
-    "request": "^2.87.0",
-    "twitter": "^1.7.1"
+  "bugs": {
+    "url": "https://github.com/imalam64/LIRI-Bot/issues"
   },
-  "devDependencies": {},
-  "keywords": [],
-  "description": ""
+  "homepage": "https://github.com/imalam64/LIRI-Bot#readme"
 }
