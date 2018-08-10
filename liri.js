@@ -5,7 +5,6 @@ var spotify = require('node-spotify-api');
 var request = require("request");
 var fs = require("fs");
 
-// Sets action accroding to case.
 var requested = process.argv[2];
 var input = process.argv;
 var search = "";
@@ -23,7 +22,7 @@ else if(requested === 'movie-this'){
     movie();
     }
 else if (requested === 'do-what-it-says'){
-doAsISay();
+doSay();
 }
 
 //Twitter Function
@@ -40,7 +39,7 @@ client.get('statuses/user_timeline', userName, function(error, tweets, response)
 });
 }
 
-// Spotify Liri Song function
+// Spotify function
 function spotifier(){
 for (var i = 3; i < input.length; i++) {
     if (i > 3 && i < input.length) {
@@ -76,7 +75,7 @@ fs.appendFile("log.txt", search, function(err){
 });
 }
 
-// OMDB Liri Movie function
+// OMDB function
 function movie(){
 for (var i = 3; i < input.length; i++) {
     if (i > 3 && i < input.length) {
@@ -122,8 +121,8 @@ fs.appendFile("log.txt", search, function(err){
 });
 }
 
-//Do As It Says
-function doAsISay() {
+//Do What It Says
+function doSay() {
 fs.readFile("random.txt", "utf8", function(error, data){
     if (error){
         return console.log(error);
